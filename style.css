@@ -9,9 +9,15 @@ body {
 
 header {
     font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
+    font-size: 52px;
+    font-style: normal;
     color: black;
 }
+
+
+/* @media media-type (media-feature){
+    Styles go here
+    } */
 
 header:hover {
     color: rgb(236, 126, 144);
@@ -21,5 +27,11 @@ header:hover {
 .content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.work {
+    display: flex;
+    align-items: flex-end;
     justify-content: space-between;
 }
