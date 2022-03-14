@@ -75,7 +75,7 @@ body {
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .portfolio-content {
@@ -86,8 +86,9 @@ body {
 }
 
 .work {
-    width: 275px;
-    height: 175px;
+    width: 325px;
+    height: 200px;
     margin: 20px;
     background-color: antiquewhite;
+    font-family: 'Special Elite', cursive;
 }
