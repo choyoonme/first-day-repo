@@ -12,32 +12,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div class="main">
-        <header>
-            <h1>jen cho</h1>
-        </header>
-        <div class="content">
-            <div class="card-catalog">
-                <div class="label"></div>
-                <nav class="special-collections">
-                    <p>SPECIAL COLLECTIONS</p>
-                </nav>
-                <div class="knob"></div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio">
-        <ul class="portfolio-content">
-            <!-- insert portfolio content -->
-            <li class="work" id="covers">work</li>
-            <li class="work" id="drawings">play</li>
-        </ul>
-    </div>
 
-    <footer>
-        <!-- insert contact information and social media here -->
-    </footer>
+<body>
+    <div class="wrapper">
+        <div class="name-photo">
+            <header>
+                <h1 class="name">jen cho</h1>
+                <img class="photo" src="assets/moi.jpg" alt="photo of yours truly" />
+            </header>
+            <div class="divider"></div>
+            <nav class="card-catalog-wrapper">
+                <a href="#work">
+                    <div class="card-catalog">
+                        <div class="label"></div>
+                        <div class="special-collections">
+                            <p>SPECIAL COLLECTIONS</p>
+                        </div>
+                        <div class="knob"></div>
+                    </div>
+                </a>
+            </nav>
+        </div>
+        <!-- add # for nav link -->
+        <div class="portfolio" id="work">
+            <ul class="portfolio-content">
+                <!-- insert portfolio content -->
+                <li class="work"><a href="">work</a>
+                    <p id="dewey">Z</p>
+                    <p id="dewey">674.75</p>
+                    <p id="dewey">.W67</p>
+                    <p id="dewey">M53</p>
+                </li>
+
+                <li class="work"><a href="">play</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <a href="mailto:yoonme@gmail.com">contact me</a>
+        </footer>
+    </div>
 </body>
 
 </html>
