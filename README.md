@@ -24,6 +24,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Mock-Up
 
-
+https://choyoonme.github.io/jc-portfolio/
 
 ![Screen shot of site](/assets/specialcollections.png "Special Collections")

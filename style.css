@@ -1,164 +1,198 @@
-    body {
-        background-color: pink;
-        width: 100%;
-        height: 100vh;
-        display: block;
-    }
-    /* allow wrapper to contain and center everything */
-    
-    .wrapper {
-        width: 75%;
-        margin: 0 auto;
-    }
-    
-    .divider {
-        border-left: 1.5px solid black;
-        height: 500px;
-    }
-    
-    .name-photo {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .name {
-        width: 250px;
-        height: 194px;
-        font-family: 'Special Elite', cursive;
-        font-size: 100px;
-        font-weight: 100;
-        color: black;
-        padding-left: 40px;
-        padding-bottom: 25px;
-    }
-    
-    .photo {
-        border-radius: 50%;
-        width: 250px;
-        height: 250px;
-        position: relative;
-        top: -65px;
-    }
-    
-    .card-catalog:hover {
-        filter: drop-shadow(10px 10px 10px black);
-        transition: all 2s;
-    }
-    
-    .card-catalog-wrapper {
-        display: flex;
-        width: auto;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .card-catalog {
-        position: relative;
-        width: 600px;
-        height: 400px;
-        background-color: rgb(231, 170, 15);
-        border: solid 1px rgb(114, 84, 7);
-        filter: drop-shadow(5px 5px 5px black);
-    }
-    
-    .label {
-        position: absolute;
-        top: 45px;
-        right: 177px;
-        width: 226px;
-        height: 85px;
-        background-color: cornsilk;
-        border: solid 10px #f2be48;
-    }
-    
-    .special-collections {
-        position: absolute;
-        top: 76px;
-        right: 219px;
-        font-family: 'Special Elite', cursive;
-        font-size: 15px;
-        color: black;
-    }
-    
-    .knob {
-        position: absolute;
-        top: 245px;
-        right: 270px;
-        width: 60px;
-        height: 60px;
-        border: solid 2.25px dashed;
-        border-radius: 50%;
-        background-color: rgb(231 170 15);
-        filter: drop-shadow(3px 3px 3px black);
-    }
-    
-    .portfolio {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .portfolio-content {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .work {
-        width: 500px;
-        height: 300px;
-        margin: 10px;
-        background-color: antiquewhite;
-        font-family: 'Special Elite', cursive;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 50px;
-    }
-    
-    .work:hover {
-        filter: drop-shadow(5px 5px 5px black);
-        transition: all 1s;
-    }
-    
-    footer {
-        height: 50px;
-        font-family: 'Special Elite', cursive;
-        font-size: 42px;
-        color: black;
-        text-align: center;
-    }
-    /* add styling to keep email link from changing color */
-    
-    a:link {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    
-    a:visited {
-        color: black;
-        background-color: transparent;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: #d59006;
-        background-color: transparent;
-        text-decoration: dashed;
-    }
-    
-    a:active {
-        color: #4b4a49;
-        background-color: transparent;
-        text-decoration: underline;
-    }
+body {
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+
+/* set wrapper to contain and center everything */
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/* position divider between name/photo and .special-collections */
+
+.divider {
+    border-left: 1.5px solid black;
+    height: 500px;
+}
+
+
+/* set div to stack name/photo and align to the left */
+
+.name-photo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* style name to a large size and use padding to align above photo */
+
+.name {
+    width: 250px;
+    height: 194px;
+    font-family: 'Special Elite', cursive;
+    font-size: 100px;
+    font-weight: 100;
+    color: black;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+
+
+/* give photo border radius to form circle and position/center under name */
+
+.photo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: -65px;
+}
+
+
+/* use pseudo class to apply a drop shadow when cursor hovers over .card-catalog */
+
+.card-catalog:hover {
+    filter: drop-shadow(10px 10px 10px black);
+    transition: all 2s;
+}
+
+
+/* wrap .card-catalog .label .knob and .special-collections to unify position */
+
+.card-catalog-wrapper {
+    display: flex;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-catalog {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(231, 170, 15);
+    border: solid 1px rgb(114, 84, 7);
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.label {
+    position: absolute;
+    top: 45px;
+    right: 177px;
+    width: 226px;
+    height: 85px;
+    background-color: cornsilk;
+    border: solid 10px #f2be48;
+}
+
+.special-collections {
+    position: absolute;
+    top: 76px;
+    right: 219px;
+    font-family: 'Special Elite', cursive;
+    font-size: 15px;
+    color: black;
+}
+
+.knob {
+    position: absolute;
+    top: 245px;
+    right: 270px;
+    width: 60px;
+    height: 60px;
+    border: solid 2.25px dashed;
+    border-radius: 50%;
+    background-color: rgb(231 170 15);
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+
+/* use display flex to center elements in .portfolio-content and set vh to allow nav link to switch down to portfolio-content */
+
+.portfolio {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* center and set flex wrap to make site responsive */
+
+.portfolio-content {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.work {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    background-color: antiquewhite;
+    font-family: 'Special Elite', cursive;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+/* apply drop shadow effect when cursor hovers over .work */
+
+.work:hover {
+    filter: drop-shadow(5px 5px 5px black);
+    transition: all 1s;
+}
+
+
+/* center footer content */
+
+footer {
+    height: 50px;
+    font-family: 'Special Elite', cursive;
+    font-size: 42px;
+    color: black;
+    text-align: center;
+}
+
+
+/* add styling to keep all links from changing color */
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d59006;
+    background-color: transparent;
+    text-decoration: dashed;
+}
+
+a:active {
+    color: #4b4a49;
+    background-color: transparent;
+    text-decoration: underline;
+}
