@@ -6,6 +6,10 @@ body {
     flex-flow: column wrap;
 }
 
+header {
+    text-align: end;
+}
+
 
 /* set wrapper to contain and center everything */
 
@@ -101,12 +105,6 @@ body {
     display: flex;
 }
 
-@media screen and (max-width:1050px) {
-    .portfolio-content {
-        flex-direction: column;
-    }
-}
-
 .work {
     width: 500px;
     height: 300px;
@@ -162,4 +160,10 @@ a:active {
     color: #4b4a49;
     background-color: transparent;
     text-decoration: underline;
+}
+
+@media screen and (max-width:1050px) {
+    .portfolio-content {
+        flex-direction: column;
+    }
 }
