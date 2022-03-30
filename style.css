@@ -9,19 +9,21 @@ body {
 }
 
 header {
-    display: flex;
-align-items: center;
-justify-content: space-evenly;
+    position: fixed;
 }
 
+.page-wrapper {
+    width: 65%;
+    margin: 0 auto;
+}
 /* set wrapper to contain and center all of it's children*/
 
 
 .statement-photo {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
-    height: 80vh;
+    display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 #aboutme {
@@ -39,71 +41,23 @@ justify-content: space-evenly;
     height: 275px;
 }
 
-
-/* use pseudo class to apply a drop shadow when cursor hovers over .card-catalog */
-
-/* .card-catalog:hover {
-    filter: drop-shadow(10px 10px 10px black);
-    transition: all 2s;
-} */
-
-
-/* wrap .card-catalog .label and .knob to unify position */
-/* .card-catalog-wrapper {
-    display: flex;
-    width: auto;
-    height: 75vh;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-catalog {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    flex-shrink: inherit;
-    align-items: center;
-    width: 600px;
-    height: 400px;
-    background-color: rgb(231, 170, 15);
-    border: solid 1px rgb(114, 84, 7);
-    filter: drop-shadow(5px 5px 5px black);
-}
-
-.label {
-    margin-top: 35px;
-    width: 226px;
-    height: 85px;
-    background-color: cornsilk;
-    border: solid 10px #f2be48;
-    text-align: center;
-}
-
-.knob {
-    width: 60px;
-    height: 60px;
-    border: solid 1px black;
-    border-radius: 50%;
-    background-color: rgb(231 170 15);
-    filter: drop-shadow(3px 3px 3px black);
-} */
-
 .portfolio-wrapper {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: space-evenly;
 }
 
 .portfolio-content {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .work {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 44px;
     background-color: antiquewhite;
     text-align: center;
     display: flex;
@@ -121,13 +75,13 @@ justify-content: space-evenly;
 }
 
 footer {
-    height: 50px;
-    font-family: 'Special Elite', cursive;
     font-size: 30px;
-    color: black;
-    text-align: center;
-    width: 75%;
-    margin: 0 auto;
+    margin: 20px auto;
+    background-color: aliceblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -157,8 +111,12 @@ a:active {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (min-width:1050px) {
     .portfolio-content {
         flex-direction: column;
+    }
+    .work {
+        width:300px;
+        height:300px;
     }
 }
