@@ -1,55 +1,59 @@
 
-* {
+body {
     background-color: pink;
     font-family: 'Special Elite', cursive;
     color: black;
-}
-body {
-    margin:40px;
     padding: 20px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 header {
-    text-align: end;
-    padding-bottom:45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position:fixed;  
+    width: 75%;
+    margin: 0 auto;
+    padding: 45px;
 }
 
 .nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: 12px;
+    line-height: 1em;
 }
+
 /* set wrapper to contain and center all of it's children*/
+
+#name {
+    font-size:large;
+    font-weight: 80;
+}
 
 .page-wrapper {
     width: 75%;
     margin: 0 auto;
 }
 
-.name-photo {
+.statement-photo {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.name {
-    font-size: 80px;
-    font-weight: 100;
-    color: black;
+#aboutme {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: justify;
 }
-
 
 /* give photo border radius to form circle and position/center next to name */
 
 .photo {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    position: relative;
+    width: 275px;
+    height: 275px;
 }
 
 
@@ -62,8 +66,7 @@ header {
 
 
 /* wrap .card-catalog .label and .knob to unify position */
-
-.card-catalog-wrapper {
+/* .card-catalog-wrapper {
     display: flex;
     width: auto;
     height: 75vh;
@@ -101,7 +104,7 @@ header {
     border-radius: 50%;
     background-color: rgb(231 170 15);
     filter: drop-shadow(3px 3px 3px black);
-}
+} */
 
 .portfolio-wrapper {
     display: flex;
@@ -113,10 +116,11 @@ header {
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .work {
-    width: 500px;
+    width: 300px;
     height: 300px;
     margin: 10px;
     background-color: antiquewhite;
@@ -125,7 +129,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 50px;
 }
 
 
@@ -134,15 +137,17 @@ header {
 .work:hover {
     filter: drop-shadow(5px 5px 5px black);
     transition: all 1s;
+    transform: scale(1.5);
 }
 
 footer {
     height: 50px;
     font-family: 'Special Elite', cursive;
-    font-size: 42px;
+    font-size: 30px;
     color: black;
     text-align: center;
-    margin-top: 25px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 
