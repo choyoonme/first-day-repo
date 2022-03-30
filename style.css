@@ -9,43 +9,26 @@ body {
 }
 
 header {
-    position:fixed;  
-    width: 75%;
-    margin: 0 auto;
-    padding: 45px;
-}
-
-.nav {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 12px;
-    line-height: 1em;
+align-items: center;
+justify-content: space-evenly;
 }
 
 /* set wrapper to contain and center all of it's children*/
 
-#name {
-    font-size:large;
-    font-weight: 80;
-}
-
-.page-wrapper {
-    width: 75%;
-    margin: 0 auto;
-}
 
 .statement-photo {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    height: 80vh;
 }
 
 #aboutme {
     background-color: antiquewhite;
     padding: 20px;
     text-align: justify;
+    margin-top:20px
 }
 
 /* give photo border radius to form circle and position/center next to name */
@@ -59,10 +42,10 @@ header {
 
 /* use pseudo class to apply a drop shadow when cursor hovers over .card-catalog */
 
-.card-catalog:hover {
+/* .card-catalog:hover {
     filter: drop-shadow(10px 10px 10px black);
     transition: all 2s;
-}
+} */
 
 
 /* wrap .card-catalog .label and .knob to unify position */
@@ -115,8 +98,6 @@ header {
 .portfolio-content {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .work {
@@ -124,7 +105,6 @@ header {
     height: 300px;
     margin: 10px;
     background-color: antiquewhite;
-    font-family: 'Special Elite', cursive;
     text-align: center;
     display: flex;
     align-items: center;
@@ -137,7 +117,7 @@ header {
 .work:hover {
     filter: drop-shadow(5px 5px 5px black);
     transition: all 1s;
-    transform: scale(1.5);
+    transform: scale(1);
 }
 
 footer {
