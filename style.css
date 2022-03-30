@@ -3,8 +3,8 @@ body {
     background-color: pink;
     font-family: 'Special Elite', cursive;
     color: black;
-    padding: 20px;
-    width: 75%;
+    padding: 50px;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -15,20 +15,22 @@ header {
 .wrapper {
     width: 65%;
     margin: 0 auto;
+    display: flex;
 }
 /* set wrapper to contain and center all of it's children*/
 
 
 .statement-photo {
     display: flex;
-   align-items: center;
-   flex-wrap: wrap;
-   justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
 }
 
 #aboutme {
     background-color: antiquewhite;
-    padding: 20px;
+    padding: 25px;
     text-align: justify;
     margin-top:20px
 }
@@ -39,6 +41,7 @@ header {
     border-radius: 50%;
     width: 275px;
     height: 275px;
+    margin: 5px
 }
 
 .portfolio-wrapper {
@@ -50,6 +53,9 @@ header {
 .portfolio-content {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .work {
