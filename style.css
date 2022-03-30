@@ -12,7 +12,7 @@ header {
     position: fixed;
 }
 
-.page-wrapper {
+.wrapper {
     width: 65%;
     margin: 0 auto;
 }
@@ -44,20 +44,18 @@ header {
 .portfolio-wrapper {
     display: flex;
     align-items: center;
-    flex-direction: space-evenly;
+    justify-content: center;
 }
 
 .portfolio-content {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .work {
-    width: 200px;
-    height: 200px;
-    margin: 44px;
+    width: 250px;
+    height: 250px;
+    margin: 45px;
     background-color: antiquewhite;
     text-align: center;
     display: flex;
@@ -71,7 +69,7 @@ header {
 .work:hover {
     filter: drop-shadow(5px 5px 5px black);
     transition: all 1s;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 footer {
@@ -111,8 +109,10 @@ a:active {
     text-decoration: underline;
 }
 
-@media screen and (min-width:1050px) {
+@media screen and (min-width:768px) {
     .portfolio-content {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
     }
     .work {
