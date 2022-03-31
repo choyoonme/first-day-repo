@@ -28,12 +28,13 @@ header {
     margin: 5px;
 }
 
-#aboutme {
+.aboutme {
     background-color: antiquewhite;
     padding: 25px;
-    text-align: justify;
+    text-align: left;
     margin-top: 20px;
     border-radius: 5px;
+    line-height: 22px;
 }
 
 
@@ -74,7 +75,7 @@ header {
 }
 
 
-/* apply drop shadow effect when cursor hovers over .work */
+/* apply drop shadow effect and scale when cursor hovers over .work */
 
 .work:hover {
     filter: drop-shadow(5px 5px 5px black);
@@ -82,14 +83,9 @@ header {
     transform: scale(1.2);
 }
 
-.hidden {
-    display: none;
-}
-
 footer {
     font-size: 20px;
     margin: 60px;
-    background-color: aliceblue;
     height: 100px;
     display: flex;
     align-items: center;
@@ -124,6 +120,9 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+
+
+/* add media query to make site responsive when changing size */
 
 @media screen and (max-width:1200px) {
     .portfolio-content {
