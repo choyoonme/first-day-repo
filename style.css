@@ -28,7 +28,7 @@ header {
     margin: 5px;
 }
 
-.aboutme {
+#aboutme {
     background-color: antiquewhite;
     padding: 25px;
     text-align: left;
