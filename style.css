@@ -1,40 +1,59 @@
 body {
-    background-color: pink;
+    background-color: rgb(205, 197, 198);
     font-family: 'Special Elite', cursive;
     color: black;
-    padding: 50px;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
-    position: fixed;
+    width: 100%;
+    height: 100px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav {
+    font-size: 20px;
 }
 
 .wrapper {
     width: 65%;
     margin: 0 auto;
     display: flex;
+    padding-top: 50px;
 }
 
 
 /* set wrapper to contain and center all of it's children*/
 
-.statement-photo {
+.name-photo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 5px;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.statement {
+    margin: 0px;
+    padding: 0px;
 }
 
 #aboutme {
-    background-color: antiquewhite;
+    width: 600px;
+    border: solid 1px black;
     padding: 25px;
     text-align: left;
     margin-top: 20px;
     border-radius: 5px;
-    line-height: 22px;
+    line-height: 30px;
+    background-color: beige;
+    font-size: 20px;
 }
 
 
@@ -44,8 +63,9 @@ header {
     border-radius: 50%;
     width: 275px;
     height: 275px;
-    margin: 5px;
     border: solid 1px black;
+    padding: 20px;
+    background-color: palegoldenrod;
 }
 
 .portfolio-wrapper {
@@ -58,20 +78,28 @@ header {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .work {
-    width: 250px;
-    height: 250px;
-    margin: 45px;
-    border: solid 2px black;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+}
+
+#tictactoe {
+    width: 450px;
+    height: 500px;
+    margin: 45px;
+    border: solid 2px black;
+}
+
+#tinys {
+    width: 575px;
+    height: 350px;
+    margin: 45px;
+    border: solid 2px black;
 }
 
 
@@ -83,15 +111,19 @@ header {
     transform: scale(1.2);
 }
 
+.end-wrap {
+    height: 100px;
+    width: 100%;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 footer {
     font-size: 20px;
     margin: 60px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px black;
-    border-radius: 5px;
 }
 
 
@@ -133,5 +165,8 @@ a:active {
     .work {
         width: 300px;
         height: 300px;
+    }
+    .statement-photo {
+        flex-wrap: wrap;
     }
 }

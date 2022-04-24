@@ -15,14 +15,16 @@
 <body>
     <header>
         <!--add name photo and statement with nav links to work and contact-->
-        <h1>Jen Cho</h1>
-        <p><a href="#aboutme">about me</a></p>
-        <p><a href="#work">work</a></p>
-        <p><a href="#contact">contact</a></p>
+        <p class="nav"><a href="#aboutme">about me</a></p>
+        <p class="nav"><a href="#work">work</a></p>
+        <p class="nav"><a href="#contact">contact</a></p>
     </header>
     <div class="wrapper">
-        <div class="statement-photo">
+        <div class="name-photo">
+            <h1>Jen Cho</h1>
             <img class="photo" src="assets/moi.jpg" alt="photo of JC" />
+        </div>
+        <div class="statement">
             <p id="aboutme">
                 Front-end web developer with a background in Library Science and an eye for design. Recently earned a certificate in full stack development from the Penn LPS Boot Camp where I developed skills in responsive design using HTML, CSS, and JavaScript. I have
                 a natural inclination toward the details, and my strengths are driven by a passion for pragmatism, simplicity, and design. When working on projects, I am known to dedicate meaningful time toward meeting requirements and deadlines. I am
@@ -33,15 +35,24 @@
     <div class="portfolio-wrapper">
         <ul class="portfolio-content" id="work">
             <!-- insert links to work and add background img in style page -->
-            <li class="work">placeholder</li>
-            <li class="work">placeholder</li>
-            <li class="work">placeholder</li>
-            <li class="work">placeholder</li>
+            <li class="work">
+                <a href="https://choyoonme.github.io/damon-stefan/">
+                    <img src="./assets/tictactoe.png" alt="image of gameboard" id="tictactoe" />
+                </a>
+            </li>
+            <li class="work">
+                <a href="https://choyoonme.github.io/mini-project-tinys/">
+                    <img src="./assets/tinysbottleshop.png" alt="image of tinys landing page" id="tinys" />
+                </a>
+            </li>
             <li class="work">placeholder</li>
         </ul>
     </div>
-    <footer id="contact"><a href="mailto:yoonme@gmail.com">contact me</a></footer>
-
+    <div class="end-wrap">
+        <footer id="contact">
+            <a href="mailto:yoonme@gmail.com">contact me</a>
+        </footer>
+    </div>
     <!-- insert links in placeholders with related image
      
     https://choyoonme.github.io/code-refactor/
