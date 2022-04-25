@@ -112,7 +112,7 @@ footer {
 /* apply drop shadow effect and scale when cursor hovers over .work */
 
 .work:hover {
-    filter: drop-shadow(5px 5px 5px var(--primary));
+    filter: drop-shadow(5px 5px 5px var(--shadow));
     transition: all 1s;
     transform: scale(1);
     cursor: pointer;
@@ -212,10 +212,12 @@ input:checked+.slider {
     --main-background: rgb(205, 197, 198);
     --primary: black;
     --text-background: beige;
+    --shadow: rgb(43, 42, 42);
 }
 
 .dark-mode {
     --primary: beige;
     --main-background: rgb(62, 23, 62);
     --text-background: rgb(108, 80, 108);
+    --shadow: rgb(104, 68, 104);
 }
