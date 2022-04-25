@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jen Cho</title>
+    <!-- link stylesheet, google font, and font awesome cdn for toggle switch icon -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +21,25 @@
         <p class="nav"><a href="#aboutme">about me</a></p>
         <p class="nav"><a href="#work">work</a></p>
         <p class="nav"><a href="#contact">contact</a></p>
+        <!-- add toggle switch for dark mode feature -->
         <label class="switch">
             <i class="fa-regular fa-moon"></i>
             <div>
-              <input type="checkbox" />
+              <input type="checkbox" id="toggle"/>
               <span class="slider round"></span>
             </div>
-          </label>
+        </label>
     </header>
     <div class="wrapper">
         <div class="name-photo">
-            <h1>Jen Cho</h1>
+            <p class="name">Jen Cho</p>
             <img class="photo" src="assets/moi.jpg" alt="photo of JC" />
         </div>
         <div class="statement">
-            <p id="aboutme">
-                Front-end web developer with a background in Library Science and an eye for design. Recently earned a certificate in full stack development from the Penn LPS Boot Camp where I developed skills in responsive design using HTML, CSS, and JavaScript. I have
-                a natural inclination toward the details, and my strengths are driven by a passion for pragmatism, simplicity, and design. When working on projects, I am known to dedicate meaningful time toward meeting requirements and deadlines. I am
-                inspired and motivated to work as part of a team to thoughtfully streamline and build better experiences on the web.
+            <p class="aboutme">
+                Front-end web developer with a background in Library Science and Fine Arts. Recently earned a certificate in full stack development from the Penn LPS Boot Camp where I developed skills in responsive design using HTML, CSS, and JavaScript. I have a natural
+                inclination toward the details, and my strengths are driven by a passion for pragmatism, simplicity, and design. When working on projects, I put great effort into making sure I connect with other members of my team and I am known to dedicate
+                meaningful time towards meeting requirements and deadlines. I am inspired and motivated to work as part of a team to thoughtfully streamline and build better experiences on the web.
             </p>
         </div>
     </div>
@@ -46,13 +48,12 @@
             <!-- insert links to work and add background img in style page -->
             <li class="work">
                 <a target="_blank" href="https://choyoonme.github.io/blue-album/">Project 1: HTML & CSS</a><br>
-                <!-- <img src="./assets/bluealbum.png" alt="cubist rendering of the blue album" id="bluealbum" /> -->
             </li>
             <li class="work">
                 <a target="_blank" href="https://choyoonme.github.io/damon-stefan/">Project 2: HTML, CSS & JavaScript</a>
-                <!-- <img src="./assets/tictactoe.png" alt="image of gameboard" id="tictactoe" /> -->
             </li>
             <li class="work">
+                <a target="_blank" href="https://choyoonme.github.io/weather_dash/">Project 3: HTML, CSS, JavaScript & API </a>
             </li>
 
         </ul>

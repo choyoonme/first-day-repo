@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(205, 197, 198);
+    background-color: var(--main-background);
     font-family: 'Source Code Pro', monospace;
-    color: black;
+    color: var(--primary);
     width: 80%;
     margin: 0 auto;
 }
@@ -9,7 +9,7 @@ body {
 header {
     width: 100%;
     height: 100px;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--primary);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -19,40 +19,37 @@ header {
     font-size: 20px;
 }
 
-button {
-    border-radius: 50%;
-}
-
 .wrapper {
     width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
-
-
-/* set wrapper to contain and center all of it's children*/
 
 .name-photo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
-    padding: 20px;
+    margin-right: 75px;
 }
 
-#aboutme {
+.name {
+    font-size: 52px;
+    margin-top: 0px;
+}
+
+.aboutme {
     width: 600px;
-    border: solid 1px black;
+    border: solid 1px var(--primary);
     padding: 25px;
     text-align: left;
     margin-top: 20px;
     border-radius: 5px;
     line-height: 30px;
-    background-color: beige;
+    background-color: var(--text-background);
     font-size: 20px;
 }
 
@@ -60,45 +57,38 @@ button {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: solid 1px black;
+    border: solid 1px var(--primary);
 }
 
 .portfolio-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-}
-
-img {
-    width: 300px;
-    height: auto;
+    padding: 75px;
 }
 
 .portfolio-content {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .work {
+    width: 300px;
+    height: 300px;
     text-align: left;
     font-size: 30px;
-}
-
-
-/* apply drop shadow effect and scale when cursor hovers over .work */
-
-.work:hover {
-    filter: drop-shadow(5px 5px 5px black);
-    transition: all 1s;
-    transform: scale(1);
+    border: solid 2px var(--primary);
+    margin: 20px;
 }
 
 .end-wrap {
     margin: 0 auto;
     width: 80%;
     height: 100px;
-    border-top: solid 2px black;
+    border-top: solid 2px var(--primary);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -109,16 +99,26 @@ footer {
 }
 
 
-/* add styling to keep all links from changing color */
+/* apply drop shadow effect and scale when cursor hovers over .work */
+
+.work:hover {
+    filter: drop-shadow(5px 5px 5px var(--primary));
+    transition: all 1s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+/* add styling to customize links */
 
 a:link {
-    color: black;
+    color: var(--primary);
     background-color: transparent;
     text-decoration: none;
 }
 
 a:visited {
-    color: black;
+    color: var(--primary);
     background-color: transparent;
     text-decoration: none;
 }
@@ -137,20 +137,20 @@ a:active {
 
 /* add media query to make site responsive when changing size */
 
-@media screen and (max-width:1200px) {
-    .portfolio-content {
+@media screen and (max-width:1024px) {
+    .wrapper,
+    .work {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    .work {
-        width: 300px;
-        height: 300px;
-    }
-    .statement-photo {
-        flex-wrap: wrap;
+    .name-photo {
+        margin: 0 auto;
     }
 }
+
+
+/* add styling for dark mode toggle switch */
 
 .switch {
     width: 55px;
@@ -192,43 +192,17 @@ input:checked+.slider {
     transform: translateX(8px);
 }
 
-nav {
-    background: #d2cca1;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-    font-size: 1.1rem;
-    position: relative;
+
+/* set root colors & dark mode colors */
+
+:root {
+    --main-background: rgb(205, 197, 198);
+    --primary: black;
+    --text-background: beige;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    height: var(--navHeight);
-    padding: 0 10px;
-}
-
-nav ul li {
-    padding: 12px 10px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    border-radius: 4px;
-    position: relative;
-}
-
-nav ul li:hover {
-    background-color: #dedaba;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.5rem;
-    background: #e5c687;
-    height: calc(100vh - var(--navHeight));
+.dark-mode {
+    --primary: beige;
+    --main-background: rgb(62, 23, 62);
+    --text-background: rgb(108, 80, 108);
 }

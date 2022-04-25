@@ -1,7 +1,24 @@
 console.log("dark mode exercise");
 
-const themeSwitch = document.querySelector('input');
+const colorSwitch = document.getElementById("toggle");
 
-themeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark-theme');
-});
+colorSwitch.addEventListener("click", checkMode);
+
+function checkMode() {
+    console.log("checking...");
+    if (colorSwitch.checked) {
+        console.log("dark on");
+        darkModeOn();
+    } else {
+        console.log("dark off");
+        darkModeOff();
+    }
+}
+
+function darkModeOn() {
+    document.body.classList.add("dark-mode");
+}
+
+function darkModeOff() {
+    document.body.classList.remove("dark-mode");
+}
