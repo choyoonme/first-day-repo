@@ -82,6 +82,7 @@ header {
     font-size: 30px;
     border: solid 2px var(--primary);
     margin: 20px;
+    padding: 10px;
 }
 
 .end-wrap {
@@ -139,7 +140,7 @@ a:active {
 
 @media screen and (max-width:1024px) {
     .wrapper,
-    .work {
+    .portfolio-content {
         display: flex;
         justify-content: center;
         flex-direction: column;
