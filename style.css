@@ -41,7 +41,7 @@ header {
     margin-top: 0px;
 }
 
-.aboutme {
+#aboutme {
     width: 600px;
     border: solid 1px var(--primary);
     padding: 25px;

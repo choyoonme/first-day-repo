@@ -26,4 +26,4 @@ This is a portfolio to showcase future work and personal projects to potential e
 
 https://choyoonme.github.io/jc-portfolio/
 
-![Screen shot of site]()
+![Screen shot of site](/assets/portfolioscreenshot.png)
