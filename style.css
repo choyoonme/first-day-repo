@@ -1,15 +1,14 @@
 body {
     background-color: rgb(205, 197, 198);
-    font-family: 'Special Elite', cursive;
+    font-family: 'Source Code Pro', monospace;
     color: black;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
 header {
     width: 100%;
     height: 100px;
-    border-top: solid 2px black;
     border-bottom: solid 2px black;
     display: flex;
     align-items: center;
@@ -20,10 +19,16 @@ header {
     font-size: 20px;
 }
 
+button {
+    border-radius: 50%;
+}
+
 .wrapper {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 50px;
 }
 
@@ -39,11 +44,6 @@ header {
     padding: 20px;
 }
 
-.statement {
-    margin: 0px;
-    padding: 0px;
-}
-
 #aboutme {
     width: 600px;
     border: solid 1px black;
@@ -56,50 +56,33 @@ header {
     font-size: 20px;
 }
 
-
-/* give photo border radius to form circle and position/center next to name */
-
 .photo {
     border-radius: 50%;
-    width: 275px;
-    height: 275px;
+    width: 300px;
+    height: 300px;
     border: solid 1px black;
-    padding: 20px;
-    background-color: palegoldenrod;
 }
 
 .portfolio-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px;
+}
+
+img {
+    width: 300px;
+    height: auto;
 }
 
 .portfolio-content {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 
 .work {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-#tictactoe {
-    width: 450px;
-    height: 500px;
-    margin: 45px;
-    border: solid 2px black;
-}
-
-#tinys {
-    width: 575px;
-    height: 350px;
-    margin: 45px;
-    border: solid 2px black;
+    text-align: left;
+    font-size: 30px;
 }
 
 
@@ -108,14 +91,14 @@ header {
 .work:hover {
     filter: drop-shadow(5px 5px 5px black);
     transition: all 1s;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .end-wrap {
+    margin: 0 auto;
+    width: 80%;
     height: 100px;
-    width: 100%;
     border-top: solid 2px black;
-    border-bottom: solid 2px black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -123,7 +106,6 @@ header {
 
 footer {
     font-size: 20px;
-    margin: 60px;
 }
 
 
@@ -142,7 +124,6 @@ a:visited {
 }
 
 a:hover {
-    color: #d59006;
     background-color: transparent;
     text-decoration: dashed;
 }
@@ -169,4 +150,85 @@ a:active {
     .statement-photo {
         flex-wrap: wrap;
     }
+}
+
+.switch {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch div {
+    position: relative;
+    display: block;
+    background: #eee;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fa-adjust {
+    transform: rotate(180deg);
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #999;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+input:checked+.slider {
+    transform: translateX(8px);
+}
+
+nav {
+    background: #d2cca1;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    height: var(--navHeight);
+    padding: 0 10px;
+}
+
+nav ul li {
+    padding: 12px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+nav ul li:hover {
+    background-color: #dedaba;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    background: #e5c687;
+    height: calc(100vh - var(--navHeight));
 }

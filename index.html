@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
@@ -18,6 +20,13 @@
         <p class="nav"><a href="#aboutme">about me</a></p>
         <p class="nav"><a href="#work">work</a></p>
         <p class="nav"><a href="#contact">contact</a></p>
+        <label class="switch">
+            <i class="fa-regular fa-moon"></i>
+            <div>
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </div>
+          </label>
     </header>
     <div class="wrapper">
         <div class="name-photo">
@@ -36,32 +45,26 @@
         <ul class="portfolio-content" id="work">
             <!-- insert links to work and add background img in style page -->
             <li class="work">
-                <a href="https://choyoonme.github.io/damon-stefan/">
-                    <img src="./assets/tictactoe.png" alt="image of gameboard" id="tictactoe" />
-                </a>
+                <a target="_blank" href="https://choyoonme.github.io/blue-album/">Project 1: HTML & CSS</a><br>
+                <!-- <img src="./assets/bluealbum.png" alt="cubist rendering of the blue album" id="bluealbum" /> -->
             </li>
             <li class="work">
-                <a href="https://choyoonme.github.io/mini-project-tinys/">
-                    <img src="./assets/tinysbottleshop.png" alt="image of tinys landing page" id="tinys" />
-                </a>
+                <a target="_blank" href="https://choyoonme.github.io/damon-stefan/">Project 2: HTML, CSS & JavaScript</a>
+                <!-- <img src="./assets/tictactoe.png" alt="image of gameboard" id="tictactoe" /> -->
             </li>
-            <li class="work">placeholder</li>
+            <li class="work">
+            </li>
+
         </ul>
     </div>
+
     <div class="end-wrap">
         <footer id="contact">
             <a href="mailto:yoonme@gmail.com">contact me</a>
         </footer>
     </div>
-    <!-- insert links in placeholders with related image
-     
-    https://choyoonme.github.io/code-refactor/
-    
-    https://choyoonme.github.io/mini-project-tinys/
-    
-    https://choyoonme.github.io/blue-album/
-    
-    https://choyoonme.github.io/damon-stefan/ -->
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
