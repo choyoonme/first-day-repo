@@ -22,8 +22,5 @@ function darkModeOn() {
 function darkModeOff() {
     document.body.classList.remove("dark-mode");
 }
-
-var lastUpdate = moment().format('lll');
-var update = document.querySelector(".updated");
-update.textContent = lastUpdate;
-document.getElementById("align").style.textAlign = "right";
+var lastUpdated = document.lastModified;
+var updateStatement = document.writeln("This page was last updated " + lastUpdated);

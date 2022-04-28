@@ -4,6 +4,7 @@ body {
     color: var(--primary);
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 header {
@@ -221,9 +222,4 @@ input:checked+.slider {
     --main-background: rgb(62, 23, 62);
     --text-background: rgb(108, 80, 108);
     --shadow: rgb(104, 68, 104);
-}
-
-.last {
-    padding-top: 20px;
-    font-style: italic;
 }
