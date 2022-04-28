@@ -4,6 +4,8 @@
 
 This is a portfolio to showcase future work and personal projects to potential employers. Currently, there are placeholders for work that I will continue to improve upon as well as add additional projects as I learn new skills throughout this course.
 
+It features the use of HTML, CSS, Javascript(dark mode toggle), and Moment(to show last update).
+
 
 ## Acceptance Criteria
 
