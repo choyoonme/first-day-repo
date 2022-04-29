@@ -21,10 +21,10 @@ header {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding-top: 100px;
 }
@@ -35,6 +35,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-right: 75px;
+    padding-top: 25px;
 }
 
 .name {
@@ -45,13 +46,13 @@ header {
 #aboutme {
     width: 600px;
     border: solid 1px var(--primary);
-    padding: 25px;
+    padding: 20px;
     text-align: left;
     margin-top: 20px;
     border-radius: 5px;
     line-height: 30px;
     background-color: var(--text-background);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .photo {
@@ -149,12 +150,12 @@ a:active {
 
 /* add media query to make site responsive when changing size */
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1064px) {
     .wrapper,
     .portfolio-content {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     #aboutme {
         width: 600px;
@@ -168,12 +169,16 @@ a:active {
         width: 400px;
         font-size: 14px;
     }
+    .portfolio-wrapper {
+        padding: 0px;
+    }
     .work {
         margin-bottom: 50px;
-        padding: 20px;
+        padding: 30px;
     }
     .name-photo {
         margin: 0 auto;
+        padding-right: 20px;
     }
 }
 
@@ -231,7 +236,7 @@ input:checked+.slider {
 }
 
 .dark-mode {
-    --primary: beige;
+    --primary: #d4d4a3;
     --main-background: rgb(62, 23, 62);
     --text-background: rgb(108, 80, 108);
     --shadow: rgb(104, 68, 104);
