@@ -2,9 +2,9 @@
 
 ## User Story
 
-This is a portfolio to showcase future work and personal projects to potential employers. Currently, there are placeholders for work that I will continue to improve upon as well as add additional projects as I learn new skills throughout this course.
+This is a portfolio to showcase future work and personal projects to potential employers. Currently, there are three projects showcased on the page. I will continue to improve upon this page as I build my skillset and add projects as I learn new skills throughout this course.
 
-It features the use of HTML, CSS, Javascript(dark mode toggle), and Moment(to show last update).
+It is built using HTML, CSS, & Javascript. I newly added a dark mode toggle switch, and a recently updated timestamp to the bottom of the page. There is also an updated media query to be more responsive and mobile friendly. Links to Github, LinkedIn, and a resume are also found in the footer of the portfolio.
 
 
 ## Acceptance Criteria
