@@ -96,6 +96,10 @@ img {
     margin: 45px;
     transition: all 1s;
 }
+.github-dark {
+    width:32px;
+    height: 32px;
+}
 
 .foot-wrap {
     margin: 0 auto;
