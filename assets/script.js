@@ -1,26 +1,23 @@
-console.log("dark mode exercise");
-
 const colorSwitch = document.getElementById("toggle");
 
 colorSwitch.addEventListener("click", checkMode);
 
 function checkMode() {
-    console.log("checking...");
-    if (colorSwitch.checked) {
-        console.log("dark on");
-        darkModeOn();
-    } else {
-        console.log("dark off");
-        darkModeOff();
-    }
+  if (colorSwitch.checked) {
+    darkModeOn();
+  } else {
+    darkModeOff();
+  }
 }
 
 function darkModeOn() {
-    document.body.classList.add("dark-mode");
+  document.body.classList.add("dark-mode");
 }
 
 function darkModeOff() {
-    document.body.classList.remove("dark-mode");
+  document.body.classList.remove("dark-mode");
 }
 var lastUpdated = document.lastModified;
-var updateStatement = document.writeln("This page was last updated " + lastUpdated);
+var updateStatement = document.writeln(
+  "This page was last updated " + lastUpdated
+);
