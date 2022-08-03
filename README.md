@@ -8,5 +8,5 @@ It is built using HTML, CSS, & Javascript. I newly added a dark mode toggle swit
 
 https://choyoonme.github.io/jc-portfolio/
 
-![Screenshot of initial site](/assets/portfolioscreenshot.png)
-![Screenshot of updated site](/assets/portfolio.png)
+![Screenshot of initial site](/src/assets/portfolioscreenshot.png)
+![Screenshot of updated site](/src/assets/portfolio.png)
