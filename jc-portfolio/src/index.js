@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./Header";
+import App from "./App";
 import About from "./About";
 import Projects from "./Projects";
 import Footer from "./Footer";
@@ -9,10 +9,11 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Header />
-    <About />
-    <Projects />
-    <Footer />
+    <App>
+      <About />
+      <Projects />
+      <Footer lastUpdated={document.lastModified} />
+    </App>
   </React.StrictMode>
 );
 

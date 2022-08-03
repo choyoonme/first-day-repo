@@ -1,9 +1,7 @@
-import "./App.css";
-
-function Header() {
+function Header({ children }) {
   return (
     <div>
-      <div className="App">
+      <div className="header">
         <p className="nav">
           <a href="#aboutme">about me</a>
         </p>
@@ -13,13 +11,7 @@ function Header() {
         <p className="nav">
           <a href="#contact">contact</a>
         </p>
-        <label className="switch">
-          <i className="fa-regular fa-moon"></i>
-          <div>
-            <input type="checkbox" id="toggle" />
-            <span className="slider round"></span>
-          </div>
-        </label>
+        {children}
       </div>
     </div>
   );

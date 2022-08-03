@@ -1,13 +1,15 @@
-body {
+.App {
   background-color: var(--main-background);
   font-family: 'Source Code Pro', monospace;
   color: var(--primary);
-  width: 80%;
-  margin: 0 auto;
   text-align: center;
 }
+.innerApp {
+  width: 80%;
+  margin: 0 auto;
+}
 
-.App {
+.header {
   width: 100%;
   height: 100px;
   border-bottom: solid 2px var(--primary);
