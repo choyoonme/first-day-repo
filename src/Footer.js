@@ -12,7 +12,7 @@ function Footer({ lastUpdated }) {
           <a href="https://github.com/choyoonme">GitHub</a>
           <a href=" https://www.linkedin.com/in/jenniferycho/ ">LinkedIn</a>
         </footer>
-        {lastUpdated}
+        <p>last updated {lastUpdated}</p>
       </div>
     </div>
   );
